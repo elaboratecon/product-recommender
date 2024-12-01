@@ -1,0 +1,16 @@
+{
+    "name": "product-recommender-app",
+    "version": "1.0.0",
+    "description": "Product Recommender API for CS 361 - Software Engineering I",
+    "main": "recommenderService.js",
+    "scripts": {
+        "api": "node recommenderService.js"
+    },
+    "keywords": [],
+    "author": "Jason Conover",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.1"
+    }
+}

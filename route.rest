@@ -1,0 +1,27 @@
+### Get recommendations by id
+GET http://localhost:6000/674bc57fa7ef1f2ff44c6235
+
+### POST new recommendations (if id already exists, should return write error)
+POST http://localhost:6000/
+Content-Type: application/json
+
+{
+  "productId": "674bc57fa7ef1f2ff44c6235",
+  "recommendedProductIds": [
+    "674bc56ea7ef1f2ff44c6215",
+    "674b6c8ae4e90ed833853be3"
+  ]
+}
+
+### PATCH existing set. Removes any duplicates (returns an error if productID doesn't exist)
+PATCH http://localhost:6000/
+Content-Type: application/json
+
+{
+  "productId": "674bc57fa7ef1f2ff44c6235",
+  "recommendedProductIds": [
+    "674bc56ea7ef1f2ff44c6215",
+    "674b6c8ae4e90ed833853be3",
+    "674bc572a7ef1f2ff44c621d"
+  ]
+}
