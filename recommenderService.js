@@ -5,7 +5,7 @@ const path = require('path')
 const app = express()
 
 // set port
-const PORT = 6000
+const PORT = 6060
 
 const RECOMMENDATIONS_FILE = path.join(__dirname, 'recommendations.js')
 
